@@ -3,6 +3,7 @@ import axios from 'axios';
 
 
 const HOST = process.env || 'https://localhost:3001/';
+const PORT = process.env.PORT || 'http://localhost:3001/';
 
 
 
