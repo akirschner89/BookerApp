@@ -28,7 +28,10 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("public"));
 
 // MongoDB Configuration configuration (Change this URL to your own DB) - models toDo
-mongoose.connect("mongodb://localhost/bookings", { useMongoClient: true });
+// FOR LOCAL USE
+// mongoose.connect("mongodb://localhost/bookings", { useMongoClient: true });
+// FOR mLAB/HEROKU
+mongoose.connect("mongodb://heroku_sxmjg4c3:itl837caggbrek0c5nbl3ra6j3@ds155414.mlab.com:55414/heroku_sxmjg4c3");
 mongoose.Promise = Promise;
 const db = mongoose.connection;
 
