@@ -6,7 +6,7 @@ import axios from 'axios';
 
 // const HOST = process.env || 'http://localhost:3001/'
 
-const HOST = process.env.PORT || 'http://localhost:3001/';
+const HOST = process.env || 'https://localhost:3001/';
 
 class createProfile extends Component {
     constructor(props) {

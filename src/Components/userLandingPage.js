@@ -5,7 +5,7 @@ import axios from 'axios';
 import GoogleApiWrapper from '../Config/googleMaps';
 
 //might need to import more components
-const HOST = process.env.PORT || 'http://localhost:3001/';
+const HOST = process.env || 'http://localhost:3001/';
 
 
 const bizStyle = {

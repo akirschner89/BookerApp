@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
-const HOST = process.env.PORT || 'http://localhost:3001/';
+const HOST = process.env || 'https://localhost:3001/';
 
 
 class bizProfile extends Component {
