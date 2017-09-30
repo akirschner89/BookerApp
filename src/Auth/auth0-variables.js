@@ -12,6 +12,9 @@ export const AUTH_CONFIG = {
   // domain: // 'your auth0 domain name',
   clientId: '3WuXzeQBXQnpXrAkUIsMWxqJX3iNL4fi',
   // clientId: // 'your auth0 clientId,
-  callbackUrl: 'http://localhost:3000/callback' // will need to change callback URI once in production
+  // for local use:
+  // callbackUrl: 'http://localhost:3000/callback' 
+  // for production: 
+  callbackUrl: 'https://quiet-inlet-65298.herokuapp.com/callback'
 }
 
