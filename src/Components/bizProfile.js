@@ -5,6 +5,7 @@ import axios from 'axios';
 const HOST = process.env || 'https://localhost:3001/';
 
 
+
 class bizProfile extends Component {
 
     constructor(props) {
@@ -18,7 +19,7 @@ class bizProfile extends Component {
     }
 
     componentDidMount() {
-        axios.get(`${HOST}api/companies`)
+        axios.get(`${HOST}/${PORT}/api/companies`)
         .then(response => {
             const dataLength = response.data.length-1;
             const thisResponse = response.data[dataLength];

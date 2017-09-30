@@ -31,7 +31,7 @@ app.use(express.static("public"));
 // FOR LOCAL USE
 // mongoose.connect("mongodb://localhost/bookings", { useMongoClient: true });
 // FOR mLAB/HEROKU
-mongoose.connect("mongodb://heroku_sxmjg4c3:itl837caggbrek0c5nbl3ra6j3@ds155414.mlab.com:55414/heroku_sxmjg4c3");
+mongoose.connect("mongodb://heroku_xmvnh4ph:n430a8qs1jdu36vdd7im4dua16@ds155934.mlab.com:55934/heroku_xmvnh4ph");
 mongoose.Promise = Promise;
 const db = mongoose.connection;
 

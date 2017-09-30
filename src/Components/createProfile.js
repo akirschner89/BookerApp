@@ -7,6 +7,7 @@ import axios from 'axios';
 // const HOST = process.env || 'http://localhost:3001/'
 
 const HOST = process.env || 'https://localhost:3001/';
+const PORT = process.env.PORT || 'http://localhost:3001/';
 
 class createProfile extends Component {
     constructor(props) {
@@ -32,7 +33,7 @@ class createProfile extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        axios.post(`${HOST}api/companies`, {
+        axios.post(`${HOST}/${PORT}/api/companies`, {
             // username: this.props.auth.username,
             // password: this.props.auth.password,
             name: this.state.name,
