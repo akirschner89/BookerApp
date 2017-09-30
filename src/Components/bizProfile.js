@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
-const HOST = process.env';
+const HOST = process.env;
 const PORT = process.env.PORT;
 
 
