@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
-const HOST = process.env || 'https://localhost:3001/';
-const PORT = process.env.PORT || 'http://localhost:3001/';
+const HOST = process.env';
+const PORT = process.env.PORT;
 
 
 
@@ -20,7 +20,7 @@ class bizProfile extends Component {
     }
 
     componentDidMount() {
-        axios.get(`${HOST}/${PORT}/api/companies`)
+        axios.get(`${HOST}/${PORT}api/companies`)
         .then(response => {
             const dataLength = response.data.length-1;
             const thisResponse = response.data[dataLength];
