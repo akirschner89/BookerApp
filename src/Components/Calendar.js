@@ -133,7 +133,7 @@ export default class Calendar extends Component {
       email: this.state.email,
       phone: this.state.phone
     }
-    axios.post(`${HOST}/${PORT}api/appointments`, appointment)
+    axios.post(`${PORT}api/appointments`, appointment)
       .then(response => this.setState({ confirmationSnackbarMessage: "Appointment succesfully added!", confirmationSnackbarOpen: true, processed: true }))
       .catch(err => {
         console.log(err)
@@ -215,7 +215,7 @@ export default class Calendar extends Component {
   componentWillMount() {
     async.series({
       appointments(callback) {
-        axios.get(`${HOST}/${PORT}api/appointments`).then(res => {
+        axios.get(`${PORT}api/appointments`).then(res => {
           callback(null, res.data.data)
         })
       }

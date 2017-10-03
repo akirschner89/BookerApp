@@ -27,7 +27,7 @@ class userLandingPage extends Component {
     }
 
     componentDidMount() {
-        axios.get(`${HOST}/${PORT}api/companies`)
+        axios.get(`${PORT}api/companies`)
             .then(response => {
                 this.setState({ companies: response.data });
             })

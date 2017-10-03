@@ -20,7 +20,7 @@ class bizProfile extends Component {
     }
 
     componentDidMount() {
-        axios.get(`${HOST}/${PORT}api/companies`)
+        axios.get(`${PORT}api/companies`)
         .then(response => {
             const dataLength = response.data.length-1;
             const thisResponse = response.data[dataLength];
