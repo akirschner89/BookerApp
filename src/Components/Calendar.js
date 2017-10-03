@@ -32,8 +32,8 @@ import FlatButton from 'material-ui/FlatButton'
 
 injectTapEventPlugin()
 
-// const HOST = process.env;
-const PORT = process.env.PORT;
+const PORT = process.env;
+// const PORT = process.env.PORT;
 
 export default class Calendar extends Component {
   constructor() {
