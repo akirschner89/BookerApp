@@ -33,7 +33,7 @@ import FlatButton from 'material-ui/FlatButton'
 injectTapEventPlugin()
 
 // const HOST = process.env;
-// const PORT = process.env.PORT;
+const PORT = process.env.PORT;
 
 export default class Calendar extends Component {
   constructor() {
@@ -133,7 +133,7 @@ export default class Calendar extends Component {
       email: this.state.email,
       phone: this.state.phone
     }
-    axios.post(`/api/appointments`, appointment)
+    axios.post(PORT + "/api/appointments", appointment)
       .then(response => this.setState({ confirmationSnackbarMessage: "Appointment succesfully added!", confirmationSnackbarOpen: true, processed: true }))
       .catch(err => {
         console.log(err)
@@ -215,7 +215,7 @@ export default class Calendar extends Component {
   componentWillMount() {
     async.series({
       appointments(callback) {
-        axios.get(`/api/appointments`).then(res => {
+        axios.get(PORT + "/api/appointments").then(res => {
           callback(null, res.data.data)
         })
       }

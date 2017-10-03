@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
-const HOST = process.env;
+// const HOST = process.env;
 const PORT = process.env.PORT;
 
 
@@ -20,7 +20,7 @@ class bizProfile extends Component {
     }
 
     componentDidMount() {
-        axios.get(`/api/companies`)
+        axios.get(PORT + "/api/companies")
         .then(response => {
             const dataLength = response.data.length-1;
             const thisResponse = response.data[dataLength];

@@ -6,7 +6,7 @@ import GoogleApiWrapper from '../Config/googleMaps';
 
 //might need to import more components
 // const HOST = process.env;
-// const PORT = process.env.PORT;
+const PORT = process.env.PORT;
 
 
 const bizStyle = {
@@ -27,7 +27,7 @@ class userLandingPage extends Component {
     }
 
     componentDidMount() {
-        axios.get(`/api/companies`)
+        axios.get(PORT + "/api/companies")
             .then(response => {
                 this.setState({ companies: response.data });
             })
