@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 // const PORT = process.env;
-// const PORT = process.env.PORT;
+const PORT = process.env.PORT;
 
 
 
@@ -20,7 +20,7 @@ class bizProfile extends Component {
     }
 
     componentDidMount() {
-        axios.get("/api/companies")
+        axios.get(PORT + "/api/companies")
         .then(response => {
             const dataLength = response.data.length-1;
             const thisResponse = response.data[dataLength];
