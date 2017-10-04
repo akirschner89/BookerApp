@@ -153,11 +153,6 @@ export default class Calendar extends Component {
 
   checkDisableDate(day) {
     const dateString = moment(day).format('YYYY-DD-MM')
-    console.log(dateString);
-    console.log(moment(day).startOf('day'));
-    console.log(moment().startOf('day'));
-    console.log(moment(day).startOf('day').diff(moment(day).startOf('day')) < 0);
-    console.log(this.state.schedule);
     return this.state.schedule[dateString] === true || moment(day).startOf('day').diff(moment().startOf('day')) < 0
     // return this.state.schedule[dateString] || moment(day).startOf('day').diff(moment(day).startOf('day')) < 0
   }
