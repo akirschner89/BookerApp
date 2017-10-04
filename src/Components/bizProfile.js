@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 // const PORT = process.env;
-const PORT = process.env.PORT;
+const PORT = process.env.NODE_ENV;
 
 
 

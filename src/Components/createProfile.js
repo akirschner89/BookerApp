@@ -7,7 +7,7 @@ import axios from 'axios';
 // const HOST = process.env || 'http://localhost:3001/'
 
 // const PORT = process.env;
-const PORT = process.env.PORT;
+const PORT = process.env.NODE_ENV;
 
 class createProfile extends Component {
     constructor(props) {

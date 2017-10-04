@@ -6,7 +6,7 @@ import GoogleApiWrapper from '../Config/googleMaps';
 
 //might need to import more components
 // const PORT = process.env;
-const PORT = process.env.PORT;
+const PORT = process.env.NODE_ENV;
 
 
 const bizStyle = {
