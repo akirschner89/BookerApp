@@ -27,7 +27,7 @@ class userLandingPage extends Component {
     }
 
     componentDidMount() {
-        axios.get("api/companies")
+        axios.get("/api/companies")
             .then(response => {
                 this.setState({ companies: response.data });
             })

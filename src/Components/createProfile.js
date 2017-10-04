@@ -33,7 +33,7 @@ class createProfile extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        axios.post("api/companies", {
+        axios.post("/api/companies", {
             // username: this.props.auth.username,
             // password: this.props.auth.password,
             name: this.state.name,
